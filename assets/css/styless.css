@@ -31,6 +31,9 @@ nav .nav-right-section  a{
     margin-right: 10px;
     color: #000000;
 }
+nav .nav-right-section a:hover {
+    text-decoration: underline;
+}
 nav .nav-right-section .menu-icon {
     background-image: url('https://static.thenounproject.com/png/756729-200.png');
     background-repeat: no-repeat;
@@ -114,6 +117,7 @@ main .main-buttons {
 }
 main .main-buttons div {
     display: inline-block;
+
 }
 main .main-buttons button {
     height: 36px;
@@ -124,6 +128,7 @@ main .main-buttons button {
     border-radius: 5px;
     padding: 0 15px;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 main .main-buttons button:hover {
     border: 1px solid #c6c6c6;
@@ -132,7 +137,7 @@ main .main-buttons button:hover {
 
 }
 /* Footer Section */
-footer {
+.nav-footer {
     width: 100%;
     height: 50px;
     position: absolute; /* Put the footer always at the bottom */
@@ -149,6 +154,7 @@ footer ul {
     list-style: none;
     display: flex;
     padding-left: 0;
+    justify-content: space-between;
 }
 footer .footer-left {
     justify-content: flex-start;
@@ -159,5 +165,41 @@ footer .footer-right {
 footer ul li a {
     margin: 10px;
     color: #5f6368;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+.country-footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 50px;
+    display: grid;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+.country-footer p {
+    margin-left: 20px;
+    color: #5f6368;
+}
+
+/* Offered Google */
+
+.main-terms {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: #222
     
 }
+.main-terms a{
+    color: #1A0DAB;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+.main-terms a:hover {
+    text-decoration: underline;
+}
+
+
