@@ -1,5 +1,16 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-
+/* Container */
+.container {
+    display: grid;
+    grid-template-rows: 8.9vh 80vh 11vh;
+    grid-template-areas: "nav"
+                        "main"
+                        "footer";
+}
 /* Navigation of the header */
 
 .nav {
