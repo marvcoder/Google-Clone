@@ -1,170 +1,48 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Container */
-.container {
-    display: grid;
-    grid-template-rows: 8.9vh 78.5vh 12.3vh;
-    grid-template-areas: "nav"
-                        "main"
-                        "footer";
-}
-/* Navigation of the header */
-.main-container {
-    grid-area: nav;
-    height: 100%;
-}
-.nav {
-    text-align: end;
-    padding: 10px;
-}
-
-.nav a {
-    padding-right: 10px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, .87);
+    padding: 0;
     font-size: 13px;
-}
-.nav a:hover {
-    text-decoration: underline;
-}
-.button-sign {
-    background-color: #4683ea;
-    color: white;
-    font-weight: bold;
-    border-radius: 2px;
-    padding: 0px 12px;
-    line-height: 28px;
-    border: 1px solid #4683ea;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Main-Container IMG*/
-.main-container {
-    grid-area: main;
-    height: 100%;
-}
-.container-img {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-areas: ". img .";
-    padding-top: 109px;
-}
-.img-google {
-    grid-area: img;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    
-}
-.img-google img {
-    max-width: 50%;
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
-/* Search Google*/
-.container-main-search{
-    display: flex;
-    flex: 100%;
-    justify-content: center;
+/* Header */
+header {
+    width: 100%;
+    height: 60px;
 }
-.main-search {
-    width: 45%;
-    padding: 11px;
-    border-radius: 24px;
-    border: 1px solid #dfe1e5;
+header nav {
     display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
     align-items: center;
 }
-.main-search i{
-    height: 20px;
-    padding-left: 8px;
-    color: #9aa0a6;
-    
+nav .nav-right-section  a{
+    margin-right: 10px;
+    color: #000000;
 }
-.main-search input {
-    background: transparent;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    color: rgba(0, 0, 0, .87);
-    display: flex;
-    flex: 100%;
-    outline: none;
-}
-.main-search img {
-    height: 24px;
-    margin: 0 10px;
-}
-
-/* Main buttons */
-.main-buttons {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-}
-.main-buttons input {
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
-    border: 1px solid #f2f2f2;
-    padding: 0px 16px;
-    margin: 11px 4px;
-    line-height: 27px;
-    height: 36px;
-    border-radius: 4px;
-    background: #f2f2f2;
-    color: #5F636C;
-    font-size: 14px;
 }
-.main-buttons input:hover {
-    border: 1px solid #c6c6c6;
-    background-color: #f8f8f8;
-    color: #222;
-}
-
-/* Offered Google */
-.main-terms {
-    display: flex;
-    justify-content: center;
-    font-size: 13px;
-    color: #222
-    
-}
-.main-terms a{
-    color: #1A0DAB;
-    text-decoration: none;
-    padding: 0px 10px;
-}
-.main-terms a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-.footer-container {
-    grid-area: footer;
-    background: #f2f2f2;
-    border-top: 1px solid #e4e4e4;
-    height: 100%;
-}
-.country-footer {
-    padding: 10px 0 10px 37px;
-    border-bottom: 1px solid #e4e4e4;
-}
-.country-footer span {
-    margin: 0;
-    font-size: 14px;
-    color: #5F6368;
-}
-.footer-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-.footer-nav a {
-    text-decoration: none;
-    padding-left: 27px;
-    font-size: 14px;
-    color: #5F6368;
-}
-.footer-nav a:hover {
-    text-decoration: underline;
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
 }
